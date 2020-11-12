@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load cov_list %}
+  <nav aria-label="breadcrumb" style="background-color: #ffffff">
+      <ol class="breadcrumb pl-5" style="background-color: #ffffff">
+        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'service' %}">Services</a></li>
+        <li class="breadcrumb-item" style="cursor:pointer"><p class="text-muted">{{name}}</p></li>
+        <li class="breadcrumb-item active" aria-current="page" style="cursor:pointer">Plan & pricing</li>
+      </ol>
+    </nav>
+    <div class="discount_ti_holder mx-auto mb-5">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col p-3">
+            <h5 class="text-center">
+              <span>😍</span> Enjoy our 50% <span>💎</span> discount within a
+              month<span>👏👏</span>
+            </h5>
+          </div>
+        </div>
+        <div
+          class="row mb-3 p-2"
+          style="border-radius: 10px; background-color: palegreen"
+        >
+          <div class="col mx-auto my-auto">
+            <h3 class="text-center" id="day">25</h3>
+            <h4
+              class="text-center"
+              style="font-family: 'Open Sans Condensed', sans-serif"
+            >
+              days
+            </h4>
+          </div>
+          <div class="col mx-auto my-auto">
+            <h3 class="text-center" id="hour">25</h3>
+            <h4
+              class="text-center"
+              style="font-family: 'Open Sans Condensed', sans-serif"
+            >
+              hours
+            </h4>
+          </div>
+          <div class="col mx-auto my-auto">
+            <h3 class="text-center" id="minute">25</h3>
+            <h4
+              class="text-center"
+              style="font-family: 'Open Sans Condensed', sans-serif"
+            >
+              minutes
+            </h4>
+          </div>
+          <div class="col mx-auto my-auto">
+            <h3 class="text-center" id="second">25</h3>
+            <h4
+              class="text-center"
+              style="font-family: 'Open Sans Condensed', sans-serif"
+            >
+              seconds
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5 p-5">
+
+{% for p in plans %}
+        {% if forloop.first %} <div class="row mx-auto">{% endif %}
+         {% if count == 1 %}
+           <div  class="col-lg-12 col-md-12 col-sm-12 mt-4" style="height:max-content">
+         {% else %}
+             <div  class="col-lg-6 col-md-6 col-sm-12 mt-4" style="height:max-content">
+         {% endif %}
+          <div class="card mx-auto shadow-lg" id="ca3" style="width: 18rem">
+            <div class="card-body">
+              <h5
+                class="card-title text-center"
+                style="color: #ff9900; font-style: bold"
+              >
+                  {{p.Planname}}
+              </h5>
+              <div
+                style="
+                  width: 100px;
+                  margin-top: -5px;
+                  margin-bottom: 13px;
+                  height: 2px;
+                  background-color: orange;
+                "
+                class="mx-auto"
+              ></div>
+              <div>
+                <h2 class="text-center" id="previous" style="color: grey">
+                  <del>{{p.previous_price}}birr</del>
+                </h2>
+                <h1 class="text-center" id="current" style="color: rgb(117, 100, 5)">
+                  {{p.current_price }} Birr
+                </h1>
+                <div
+                  class="separator mx-auto mt-4"
+                  style="width: 99%; height: 1px; background-color: indianred"
+                ></div>
+<!--                <p class="text-left">-->
+<!--                  {{p.Plandescription}}-->
+<!--                </p>-->
+                <ul class="p-3" style="list-style: none">
+               {% for p in p.Plandescription|toList %}
+                <li class="points">
+
+                  <p class="text-left small" style="font-family: Roboto; font-size: medium;">
+                    <i
+                      class="fa fa-fw fa-check"
+                      style="color: green; font-size: 18px"
+                    ></i
+                    ><b
+                      >&nbsp {{ p }} </b>
+                  </p>
+                </li>
+                <li></li>
+                {% endfor %}
+                </ul>
+              </div>
+              <a
+                href="#footer"
+                class="btn btn-outline-info btn-md btn-block mt-4"
+                style="color: rgb(9, 25, 78)"
+                >Go with 👆</a
+              >
+            </div>
+          </div>
+        </div>
+         {% if forloop.counter|divisibleby:2 %}</div><div class="row mx-auto">{% endif %}
+         {% if forloop.last %}</div>{% endif %}
+
+  {% endfor %}
+        </div>
+
+    <div class="ads"></div>
+
+    <script type="text/javascript">
+      var countDate = new Date("Dec 5, 2020 00:00:00:00");
+      newYear();
+      function newYear() {
+        var now = new Date().getTime();
+        gap = countDate - now;
+
+        var second = 1000;
+        var minute = second * 60;
+        var hour = minute * 60;
+        var day = hour * 24;
+
+        var d = Math.floor(gap / day);
+        var h = Math.floor((gap % day) / hour);
+        var m = Math.floor((gap % hour) / minute);
+        var s = Math.floor((gap % minute) / second);
+
+        document.getElementById("day").innerText = d;
+        document.getElementById("hour").innerText = h;
+        document.getElementById("minute").innerText = m;
+        document.getElementById("second").innerText = s;
+      }
+
+      setInterval(function () {
+        newYear();
+      }, 1000);
+    </script>
+{% endblock %}

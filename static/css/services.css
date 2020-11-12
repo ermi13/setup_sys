@@ -1,0 +1,167 @@
+
+footer {
+  background-color: rgb(48, 47, 47);
+  padding-top: 100px;
+}
+#services_list li a {
+  font-family: "Krona One", sans-serif;
+  color: white;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+ul li a {
+  font-family: Roboto;
+}
+#services_list li:hover a,
+#services_list li:hover a i {
+  color: #ffc774;
+}
+
+#services_list li a i {
+  color: white;
+}
+#findus_list li a {
+  font-family: "Krona One", sans-serif;
+  color: black;
+  font-size: 12px;
+  padding-top: 15px;
+}
+.iconPic {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.iconPic:hover {
+  width: 103px;
+  height: 103px;
+}
+.onSmall {
+  display: none;
+}
+#row_gutter {
+  display: block;
+}
+#findus_list li a i {
+  color: #ffc774;
+  font-size: 30px;
+  margin-left: 13px;
+}
+
+#findus_list li a:hover i,
+#findus_list li:hover a {
+  color: white;
+}
+#findus_list li {
+  margin-top: 10px;
+}
+
+#web {
+  font-size: 22px;
+}
+.btnOnsmall {
+  display: none;
+}
+
+.navbar-brand {
+  margin-left: 80px;
+}
+#frameWorks {
+  background-color: rgb(58, 57, 50);
+}
+#web,
+#blog,
+#mobApp,
+#crypto {
+  font-family: "Teko", sans-serif;
+  font-size: 22px;
+}
+@media (max-width: 769px) {
+  #frameWorks .row {
+    margin-left: 0px;
+  }
+  #frameWorks .row .col {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 426px) {
+  #web,
+  #blog,
+  #mobApp,
+  #frameWorks h5 {
+    font-size: medium;
+    margin-bottom: 5px;
+  }
+  #frameWorks .row .col {
+    margin-top: 15px;
+  }
+  #frameWorks .row {
+    margin-left: 25px;
+  }
+  .btnOnsmall {
+    display: block;
+  }
+  #mobApp,
+  #crypto {
+    font-size: 18px;
+  }
+  #ecom {
+    font-size: 17px;
+  }
+  .btnOnbig {
+    display: none;
+  }
+  .points p {
+    font-size: small;
+    color: grey;
+  }
+  .points p b {
+    color: rgb(78, 77, 77);
+  }
+  .points p span {
+    font-size: 12px;
+  }
+}
+
+#footer {
+  background-color: #1c1f21;
+}
+.footer_logo {
+  width: 100px;
+  height: 100px;
+}
+.text,
+#comment {
+  color: white;
+}
+#services {
+  color: white;
+}
+#servicesList p a {
+  color: white;
+}
+
+#servicesList p a i {
+  color: white;
+}
+
+#servicesList p:hover a,
+#servicesList p:hover a i {
+  color: #fab038;
+}
+.form-group label {
+  color: white;
+}
+#contact h6,
+#contact p {
+  color: white;
+}
+#fb,
+#twitter,
+#googleP,
+#linkedin {
+  color: #fab038;
+}

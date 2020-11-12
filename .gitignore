@@ -1,0 +1,203 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+.idea
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+.gitignore
+Hello World/Include/
+Hello World/Scripts/Activate.ps1
+Hello World/Scripts/activate
+Hello World/Scripts/activate.bat
+Hello World/Scripts/chardetect.exe
+Hello World/Scripts/deactivate.bat
+Hello World/Scripts/django-admin.exe
+Hello World/Scripts/django-admin.py
+Hello World/Scripts/easy_install-3.8.exe
+Hello World/Scripts/easy_install.exe
+Hello World/Scripts/gunicorn.exe
+Hello World/Scripts/pip.exe
+Hello World/Scripts/pip3.8.exe
+Hello World/Scripts/pip3.exe
+Hello World/Scripts/python.exe
+Hello World/Scripts/pythonw.exe
+Hello World/Scripts/sqlformat.exe
+Hello World/pyvenv.cfg
+Procfile
+Setupsys/__init__.py
+Setupsys/asgi.py
+Setupsys/settings.py
+Setupsys/urls.py
+Setupsys/wsgi.py
+homepage/__init__.py
+homepage/admin.py
+homepage/apps.py
+homepage/migrations/
+homepage/models.py
+homepage/templatetags/__init__.py
+homepage/templatetags/cov_list.py
+homepage/tests.py
+homepage/urls.py
+homepage/views.py
+main.py
+manage.py
+media_cdn/
+price/__init__.py
+price/admin.py
+price/apps.py
+price/migrations/0001_initial.py
+price/migrations/__init__.py
+price/models.py
+price/templatetags/__init__.py
+price/templatetags/cov_list.py
+price/tests.py
+price/urls.py
+price/views.py
+requirements.txt
+services/__init__.py
+services/admin.py
+services/apps.py
+services/migrations/__init__.py
+services/models.py
+services/tests.py
+services/urls.py
+services/views.py
+static/
+staticfiles/
+templates/
+test.py

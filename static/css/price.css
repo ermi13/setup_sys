@@ -1,0 +1,93 @@
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.breadcrumb-item a {
+  color: black;
+  font-style: bold;
+  font-family: "Cabin", sans-serif;
+}
+
+#services_list li a {
+  font-family: "Krona One", sans-serif;
+  color: white;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+#services_list li:hover a,
+#services_list li:hover a i {
+  color: #ffc774;
+}
+
+#services_list li a i {
+  color: white;
+}
+#findus_list li a {
+  font-family: "Krona One", sans-serif;
+  color: black;
+  font-size: 12px;
+  padding-top: 15px;
+}
+
+@media (max-width: 426px) {
+  h5 {
+    font-size: 18px;
+  }
+  h5 span {
+    font-size: small;
+  }
+  ol li a,
+  ol li {
+    font-size: 10px;
+    font-style: bold;
+  }
+  div h3 {
+    font-size: 15px;
+  }
+  div h4 {
+    font-size: 17px;
+  }
+  .discount_ti_holder {
+    margin: 15px;
+  }
+}
+
+.ads {
+  height: 150px;
+  width: 100%;
+
+  margin-bottom: 100px;
+}
+.discount_ti_holder {
+  height: 150px;
+  width: 100%;
+
+  margin-bottom: 30px;
+}
+.countdown div:before {
+  content: "";
+
+  height: 35px;
+  width: 100%;
+  background: seagreen;
+}
+
+.countdown div {
+  height: 20px;
+  width: 100px;
+  background-color: sienna;
+}
+.countdown {
+  background-color: skyblue;
+  height: 50%;
+}
+#hour,
+#day,
+#second,
+#minute {
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+}
