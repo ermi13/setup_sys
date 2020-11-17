@@ -26,7 +26,7 @@ SECRET_KEY = '6%qkwvswho%$s&v49ld6pr0-u_pj37592wak(9wid_tn=4wbw9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['setupsys.herokuapp.com','http://127.0.0.1']
+ALLOWED_HOSTS = ['setupsystem.herokuapp.com','http://127.0.0.1']
 
 # Application definition
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -128,13 +128,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
-STATICFILES_DIRS = [
-   os.path.join(BASE_DIR, 'static'),
-]
+
 django_heroku.settings(locals())
