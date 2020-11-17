@@ -4,7 +4,53 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  background-color: cornsilk;
 }
+#pulseprt {
+  background: #5a99d4;
+  box-shadow: 0 0 0 0 rgba(#5a99d4, 0.5);
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+#hideMe {
+  -moz-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 5s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    @include transform(scale(0.9));
+  }
+  70% {
+    @include transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+  100% {
+    @include transform(scale(0.9));
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}
+
 /* nav css */
 nav {
   background-color: #fec10b;
@@ -58,7 +104,7 @@ ul li a {
   height: fit-content;
   margin-top: 75px;
   margin-bottom: 140px;
-  background-image: url("images/priceDesc.jpg");
+
   background-size: cover;
 }
 #costExpl h1 {
@@ -114,7 +160,7 @@ ul li a {
   height: 250px;
   width: 100%;
   position: relative;
-  background-image: url("images/res_back.jpg");
+
   background-size: cover;
   display: none;
 }
@@ -162,7 +208,7 @@ ul li a {
   font-size: 35px;
 }
 #commentBack {
-  background-image: url("images/commentBack.jpg");
+
 }
 .birrs {
   font-size: 45px;
@@ -301,10 +347,7 @@ ul li a {
   .navbar-brand {
     margin-left: 5px;
   }
-form {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+
   #test_pic1,
   #test_pic2 {
     width: 110px;
@@ -400,10 +443,6 @@ form {
     font-size: 30px;
   }
 
-form {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
   #valueText {
     font-size: 32px;
   }
@@ -435,11 +474,6 @@ form {
   }
   #comment {
     font-size: 15px;
-  }
-
-form {
-    margin-left: 50px;
-    margin-right: 50px;
   }
 }
 #box2 {
