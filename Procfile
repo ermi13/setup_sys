@@ -1,1 +1,1 @@
-web: gunicorn Setupsys.wsgi --log-file-
+web: gunicorn Setupsys.wsgi
